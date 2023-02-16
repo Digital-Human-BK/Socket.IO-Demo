@@ -1,0 +1,160 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #222;
+}
+
+body {
+  background-color: #333;
+}
+
+.app {
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 900px;
+  max-width: 70%;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  background-color: #222;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.owner {
+  margin-bottom: 0.5rem;
+  padding: 10px;
+  background-color: #00aff0;
+  border-radius: 0.5rem;
+  max-width: 60%;
+  align-self: flex-end;
+  word-break: break-all;
+}
+
+.buddy {
+  margin-bottom: 0.5rem;
+  padding: 10px;
+  background-color: #525b65;
+  border-radius: 0.5rem;
+  max-width: 60%;
+  align-self: flex-start;
+  word-break: break-all;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  background-color: #00aff0;
+}
+
+input {
+  height: 2.5rem;
+  padding: 10px;
+  outline: none;
+  border: 2px solid #222;
+  border-radius: 0.5rem;
+  background-color: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+
+button {
+  width: 4rem;
+  height: 2.5rem;
+  padding: 10px;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+.confirm {
+  background-color: #25d366;
+}
+
+.join {
+  background-color: #ff6600;
+}
+
+.send {
+  background-color: #1877f2;
+}
+
+.flex-row {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-input {
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.flex-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.full-width {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+}
+
+.fw-input {
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.msg-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
